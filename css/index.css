@@ -74,6 +74,11 @@ header {
 	justify-content: space-between;
 }
 
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 nav ul {
 	display: flex;
@@ -88,12 +93,6 @@ nav li {
 	color: #b4b1b4;
 }
 
-nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .banner {
 	display: flex;
 	justify-content: space-evenly;
@@ -105,7 +104,6 @@ nav {
 .banner h1 {
     font-size: 62px;
     text-align: center;
-    vertical-align: center;
 	margin: 65px 25px 10px 50px;
 }
 	
@@ -170,3 +168,93 @@ nav {
 }
 
 
+
+/*********** Media Queries **************/
+
+		/* Tablet */
+@media (max-width: 800px) {
+	body {
+		margin: 2%;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	nav {
+		padding: 2.5em;
+	}
+	
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	nav li {
+		color: #b4b1b4;
+	}
+
+	.banner img {
+		display: none;
+	}
+
+	.banner {
+		border-bottom: 3px solid #b4b1b4;
+		height: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.banner h1 {
+		font-size: 62px;
+		text-align: center;
+		margin: 1%;
+	}
+
+	.banner-boxes {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 4px;
+		border: 1px solid black;
+		width: 50%;
+		text-align: center;
+		font-size: 12px;
+		margin: 4%;
+	}
+}
+
+@media (max-width: 500px) {
+	.logo {
+		padding-bottom: .25em;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	nav li {
+		border-bottom: 1px solid #b4b1b4;
+		width: 100%;
+		text-align: center;
+		padding: 1em;
+	}
+
+	.topNavItem {
+		border-top: 1px solid #b4b1b4;
+	}
+}
