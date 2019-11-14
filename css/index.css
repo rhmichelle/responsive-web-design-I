@@ -169,7 +169,7 @@ nav li {
 
 
 
-/*********** Media Queries **************/
+/******************* Media Queries *************************/
 
 		/* Tablet */
 @media (max-width: 800px) {
@@ -256,5 +256,32 @@ nav li {
 
 	.topNavItem {
 		border-top: 1px solid #b4b1b4;
+	}
+
+	.banner {
+		margin: 1em;
+		padding: 3em 0 4em 0;
+	}
+	
+	.banner h1 {
+		font-size: 54px;
+		text-align: center;
+		margin: 1%;
+		padding: 1%;
+	}
+
+	.top-section, 
+	.bottom-section {
+		flex-direction: column;
+		width: 100%
+	}
+
+	.infoBox {
+		padding: 1em .5em;
+	}
+
+	.copyright {
+		padding: 2.5em;
+		text-align: center;
 	}
 }
